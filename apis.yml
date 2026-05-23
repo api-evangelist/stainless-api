@@ -1,0 +1,175 @@
+aid: stainless-api
+name: Stainless
+description: >-
+  Stainless is a New York-based developer-tools company that turns an OpenAPI
+  specification into a portfolio of high-quality, idiomatic SDKs, reference
+  documentation, MCP servers, CLIs, and Terraform providers. The platform was
+  founded by veterans of Stripe, Heroku, and Twilio with the explicit goal of
+  bringing Stripe-quality developer experience to any API, and is used by
+  AI-platform and infrastructure companies including OpenAI, Anthropic, Google
+  DeepMind, Cloudflare, Modern Treasury, Perplexity, Replicate, LangChain,
+  Beeper, and Runway. Stainless supports nine target languages today
+  (TypeScript, Python, Go, Java, Kotlin, Ruby, PHP, C#, plus a CLI) and
+  publishes generated code under the Apache 2.0 license into customer-owned
+  GitHub repositories. The company exposes its own platform as a REST API at
+  api.stainless.com (v0), with endpoints for managing organizations, projects,
+  branches, builds, and the current user, plus a build-compare endpoint and
+  matching client libraries. Stainless also ships the Stainless Studio
+  (web-based config UI), the Stainless CLI, a Language Server, GitHub member
+  sync, breaking-change detection, SSO, audit logs, and integrations with
+  documentation hosts (Bump.sh, GitBook, Mintlify, ReadMe).
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - SDK Generation
+  - OpenAPI
+  - API Tooling
+  - Developer Experience
+  - MCP
+  - Model Context Protocol
+  - Documentation
+  - Code Generation
+  - Terraform Provider
+  - API Reference
+  - DevTools
+  - API First
+url: https://raw.githubusercontent.com/api-evangelist/stainless-api/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: stainless-api:stainless-platform-api
+    name: Stainless Platform API
+    description: >-
+      The Stainless Platform API is a REST API for programmatically managing
+      Stainless projects, branches, and SDK builds. It exposes the same
+      primitives that power the Stainless Studio web UI and CLI, allowing
+      customers to create and update projects, manage branches that track
+      different OpenAPI versions, trigger and inspect builds across the nine
+      supported languages, compare two builds, and read organization and
+      current-user information. The API is served from api.stainless.com under
+      the v0 namespace and is consumed via official Stainless client libraries
+      in TypeScript, Python, Go, Java, Kotlin, Ruby, PHP, and C#, plus the
+      Stainless CLI.
+    humanURL: https://www.stainless.com/docs/api-reference
+    baseURL: https://api.stainless.com/v0
+    tags:
+      - SDK Generation
+      - OpenAPI
+      - Builds
+      - Projects
+      - Branches
+      - Developer Platform
+    properties:
+      - type: Documentation
+        url: https://www.stainless.com/docs
+      - type: APIReference
+        url: https://www.stainless.com/docs/api-reference
+      - type: GettingStarted
+        url: https://www.stainless.com/docs/get-started
+      - type: GitHubOrganization
+        url: https://github.com/stainless-api
+      - type: TypeScriptSDK
+        url: https://github.com/stainless-api/stainless-node
+      - type: PythonSDK
+        url: https://github.com/stainless-api/stainless-python
+      - type: GoSDK
+        url: https://github.com/stainless-api/stainless-go
+      - type: JavaSDK
+        url: https://github.com/stainless-api/stainless-java
+      - type: KotlinSDK
+        url: https://github.com/stainless-api/stainless-kotlin
+      - type: RubySDK
+        url: https://github.com/stainless-api/stainless-ruby
+      - type: CLI
+        url: https://github.com/stainless-api/stainless-cli
+      - type: MCPFront
+        url: https://github.com/stainless-api/mcp-front
+    features:
+      - name: Project Management
+        description: Create, list, retrieve, and update Stainless projects via REST.
+      - name: Branch Management
+        description: Create, list, and delete branches that track OpenAPI versions.
+      - name: Build Lifecycle
+        description: Trigger SDK builds, list builds, retrieve build status, and inspect output.
+      - name: Build Comparison
+        description: Compare two builds to surface diffs across generated SDKs.
+      - name: Organization and User
+        description: Read organization membership and current-user information.
+      - name: Multi-Language SDKs
+        description: Official client libraries in nine languages plus a CLI.
+      - name: GitHub Publishing
+        description: Generated SDKs are published into customer-owned GitHub repositories.
+      - name: Breaking Change Detection
+        description: Surface breaking changes between builds before publishing.
+    useCases:
+      - name: Automated SDK Pipelines
+        description: Wire Stainless builds into CI to ship SDKs on every API release.
+      - name: API-Spec-Driven Documentation
+        description: Generate reference docs and MCP servers from the same OpenAPI source.
+      - name: Multi-Spec Coordination
+        description: Manage multiple OpenAPI specs (e.g., per service) under one platform.
+      - name: Enterprise Governance
+        description: Use SSO, audit logs, and member sync for regulated environments.
+      - name: Agent-Ready APIs
+        description: Generate MCP servers so APIs are usable by AI agents alongside SDKs.
+    integrations:
+      - name: GitHub
+      - name: Bump.sh
+      - name: GitBook
+      - name: Mintlify
+      - name: ReadMe
+      - name: NPM
+      - name: PyPI
+      - name: Maven Central
+      - name: RubyGems
+      - name: Packagist
+      - name: NuGet
+      - name: Go Modules
+    authentication:
+      - type: Bearer
+        description: API requests are authenticated with a bearer access token issued from the Stainless dashboard.
+common:
+  - type: Website
+    url: https://www.stainless.com
+  - type: Documentation
+    url: https://www.stainless.com/docs
+  - type: APIReference
+    url: https://www.stainless.com/docs/api-reference
+  - type: Pricing
+    url: https://www.stainless.com/pricing
+  - type: Customers
+    url: https://www.stainless.com/customers
+  - type: Blog
+    url: https://www.stainless.com/blog
+  - type: Changelog
+    url: https://www.stainless.com/changelog
+  - type: Careers
+    url: https://www.stainless.com/careers
+  - type: Contact
+    url: https://www.stainless.com/contact
+  - type: Studio
+    url: https://app.stainless.com
+  - type: GitHubOrganization
+    url: https://github.com/stainless-api
+  - type: TypeScriptSDK
+    url: https://github.com/stainless-api/stainless-node
+  - type: PythonSDK
+    url: https://github.com/stainless-api/stainless-python
+  - type: CLI
+    url: https://github.com/stainless-api/stainless-cli
+  - type: MCPFront
+    url: https://github.com/stainless-api/mcp-front
+  - type: STLAPI
+    url: https://github.com/stainless-api/stl-api
+  - type: Email
+    url: mailto:support@stainless.com
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/stainless-api
+  - type: Twitter
+    url: https://twitter.com/StainlessAPI
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
