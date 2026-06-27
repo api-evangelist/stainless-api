@@ -144,7 +144,7 @@ common:
     url: https://www.stainless.com/customers
   - type: Blog
     url: https://www.stainless.com/blog
-  - type: Changelog
+  - type: ChangeLog
     url: https://www.stainless.com/changelog
   - type: Careers
     url: https://www.stainless.com/careers
