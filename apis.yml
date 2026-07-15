@@ -132,6 +132,8 @@ apis:
       - type: Bearer
         description: API requests are authenticated with a bearer access token issued from the Stainless dashboard.
 common:
+  - type: AgenticAccess
+    url: agentic-access/stainless-api-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/stainless-api-vulnerability-disclosure.yml
   - type: DomainSecurity
