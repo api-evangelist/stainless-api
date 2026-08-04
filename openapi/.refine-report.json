@@ -1,0 +1,22 @@
+{
+  "provider": "stainless-api",
+  "sources": [
+    "stainless-api-build-target-outputs-api-openapi.yml",
+    "stainless-api-builds-api-openapi.yml",
+    "stainless-api-orgs-api-openapi.yml",
+    "stainless-api-projects-api-openapi.yml",
+    "stainless-api-user-api-openapi.yml"
+  ],
+  "outputs": [
+    "stainless-api-build-target-outputs-api-openapi.yml",
+    "stainless-api-builds-api-openapi.yml",
+    "stainless-api-orgs-api-openapi.yml",
+    "stainless-api-projects-api-openapi.yml",
+    "stainless-api-user-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
