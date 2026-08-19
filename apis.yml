@@ -51,7 +51,7 @@ tags:
 url: https://raw.githubusercontent.com/api-evangelist/stainless-api/refs/heads/main/apis.yml
 created: '2026-05-23'
 modified: '2026-05-23'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 apis:
 - aid: stainless-api:stainless-platform-api
   name: Stainless Platform API
