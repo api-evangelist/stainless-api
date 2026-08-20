@@ -41,6 +41,18 @@ tags:
   - API Tooling
   - Developer Experience
   - MCP
+  - Documentation
+  - Code Generation
+  - Terraform Provider
+  - API Reference
+  - DevTools
+  - API-First
+tags_raw:
+  - SDK Generation
+  - OpenAPI
+  - API Tooling
+  - Developer Experience
+  - MCP
   - Model Context Protocol
   - Documentation
   - Code Generation
@@ -66,6 +78,13 @@ apis:
   humanURL: https://www.stainless.com/docs/api-reference
   baseURL: https://api.stainless.com/v0
   tags:
+  - SDK Generation
+  - OpenAPI
+  - Builds
+  - Project
+  - Branches
+  - Developer Platform
+  tags_raw:
   - SDK Generation
   - OpenAPI
   - Builds
@@ -168,6 +187,8 @@ apis:
   humanURL: https://www.stainless.com/docs/api-reference
   baseURL: https://api.stainless.com/v0
   tags:
+  - Organization
+  tags_raw:
   - Orgs
   properties:
   - type: OpenAPI
@@ -178,6 +199,8 @@ apis:
   humanURL: https://www.stainless.com/docs/api-reference
   baseURL: https://api.stainless.com/v0
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
