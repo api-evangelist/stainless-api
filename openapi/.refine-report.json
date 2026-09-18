@@ -1,11 +1,7 @@
 {
   "provider": "stainless-api",
   "sources": [
-    "stainless-api-build-target-outputs-api-openapi.yml",
-    "stainless-api-builds-api-openapi.yml",
-    "stainless-api-orgs-api-openapi.yml",
-    "stainless-api-projects-api-openapi.yml",
-    "stainless-api-user-api-openapi.yml"
+    "_original/stainless-api-openapi.yml"
   ],
   "outputs": [
     "stainless-api-build-target-outputs-api-openapi.yml",
@@ -17,6 +13,43 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "stainless-api-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "stainless-api-openapi.yml: tagged paths GET /v0/user -> User",
+    "stainless-api-openapi.yml: tagged paths GET /v0/orgs -> Orgs",
+    "stainless-api-openapi.yml: tagged paths GET /v0/orgs/{org} -> Orgs",
+    "stainless-api-openapi.yml: tagged paths GET /v0/projects -> Projects",
+    "stainless-api-openapi.yml: tagged paths POST /v0/projects -> Projects",
+    "stainless-api-openapi.yml: tagged paths GET /v0/projects/{project} -> Projects",
+    "stainless-api-openapi.yml: tagged paths PATCH /v0/projects/{project} -> Projects",
+    "stainless-api-openapi.yml: tagged paths POST /v0/projects/{project}/generate_commit_message -> Projects",
+    "stainless-api-openapi.yml: tagged paths GET /v0/projects/{project}/branches -> Projects",
+    "stainless-api-openapi.yml: tagged paths POST /v0/projects/{project}/branches -> Projects",
+    "stainless-api-openapi.yml: tagged paths GET /v0/projects/{project}/branches/{branch} -> Projects",
+    "stainless-api-openapi.yml: tagged paths DELETE /v0/projects/{project}/branches/{branch} -> Projects",
+    "stainless-api-openapi.yml: tagged paths PUT /v0/projects/{project}/branches/{branch}/rebase -> Projects",
+    "stainless-api-openapi.yml: tagged paths PUT /v0/projects/{project}/branches/{branch}/reset -> Projects",
+    "stainless-api-openapi.yml: tagged paths GET /v0/projects/{project}/configs -> Projects",
+    "stainless-api-openapi.yml: tagged paths POST /v0/projects/{project}/configs/guess -> Projects",
+    "stainless-api-openapi.yml: tagged paths GET /v0/builds -> Builds",
+    "stainless-api-openapi.yml: tagged paths POST /v0/builds -> Builds",
+    "stainless-api-openapi.yml: tagged paths GET /v0/builds/{buildId} -> Builds",
+    "stainless-api-openapi.yml: tagged paths POST /v0/builds/compare -> Builds",
+    "stainless-api-openapi.yml: tagged paths GET /v0/builds/{buildId}/diagnostics -> Builds",
+    "stainless-api-openapi.yml: tagged paths GET /v0/build_target_outputs -> Build Target Outputs",
+    "stainless-api-openapi.yml: declared missing tag: Build Target Outputs",
+    "stainless-api-openapi.yml: declared missing tag: Builds",
+    "stainless-api-openapi.yml: declared missing tag: Orgs",
+    "stainless-api-openapi.yml: declared missing tag: Projects",
+    "stainless-api-openapi.yml: declared missing tag: User",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "stainless-api-build-target-outputs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "stainless-api-builds-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "stainless-api-orgs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "stainless-api-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "stainless-api-user-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
